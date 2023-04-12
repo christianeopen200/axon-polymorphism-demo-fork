@@ -16,7 +16,7 @@ import java.time.Instant;
 
 public class EagleTest {
 
-    private FixtureConfiguration<Eagle> fixture = new AggregateTestFixture<>(Eagle.class);
+    private FixtureConfiguration<XEagle> fixture = new AggregateTestFixture<>(XEagle.class);
 
     @Test
     public void hatchEagleTest() {

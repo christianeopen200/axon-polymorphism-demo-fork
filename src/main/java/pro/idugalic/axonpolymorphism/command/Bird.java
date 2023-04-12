@@ -17,7 +17,7 @@ import java.util.Optional;
 
 import static org.axonframework.modelling.command.AggregateLifecycle.apply;
 
-@Aggregate
+@Aggregate(snapshotTriggerDefinition = "defaultSnapshotTrigger")
 @NoArgsConstructor(access = AccessLevel.PACKAGE)
 abstract class Bird {
 

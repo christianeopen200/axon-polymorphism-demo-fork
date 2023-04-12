@@ -17,10 +17,10 @@ import static org.axonframework.modelling.command.AggregateLifecycle.apply;
 @Aggregate
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @Slf4j
-final class Eagle extends FlyingBird {
+final class XEagle extends FlyingBird {
 
     @CommandHandler
-    Eagle(HatchEagleCommand command) {
+    XEagle(HatchEagleCommand command) {
         apply(new EagleHatchedEvent(command.getId(), Instant.now()));
     }
 
